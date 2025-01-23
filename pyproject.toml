@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools_scm>=8", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "odin-graph"
+description = "Graph adapter for odin-control"
+dependencies = [ 
+    "odin-control @ git+https://git@github.com/odin-detector/odin-control.git@1.6.0",
+]
+dynamic = ["version"]
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{name = "Ashley Neaves", email = "ashley.neaves@stfc.ac.uk"}, {name = "Evelyn Johns", email = "evelyn.johns@stfc.ac.uk"}]
+
+
+[tool.setuptools_scm]
