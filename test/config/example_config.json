@@ -1,0 +1,21 @@
+{
+    "example" : {
+        "dataset" : {
+            "adapter": "adaptername",
+            "get_path" : "adapterpath",
+            "interval" : 1,
+            "retention" : 60,
+            "location" : "example/dataset"
+        }
+    },
+
+    "example_avg" : {
+        "dataset_avg" : {
+            "average" : true,
+            "source" : "example/dataset",
+            "interval" : 5,
+            "retention" : 60,
+            "location" : "example_avg/dataset_avg"
+        }
+    }   
+}
